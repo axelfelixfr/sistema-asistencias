@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="favicon/x-icon" href="./assets/img/lista-de-asistentes.svg" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
+  <title>Sistema de asistencias</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <!-- Inicio del Header -->
+  <header class="bg-light text-white">
+    <div class="px-3 py-2">
+      <div class="container d-flex flex-wrap justify-content-center">
+        <div class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto">
+          <img width="50" height="45" src="./assets/img/lista-de-asistentes.svg" alt="Sistema Asistencia">
+        </div>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-primary me-2">Login</button>
+          <button type="button" class="btn btn-danger">Cerrar Sesión</button>
+        </div>
+      </div>
+    </div>
+  </header> <!-- Fin del Header -->
+
+
+  <!-- Inicio de Formulario -->
+  <main class="flex-shrink-0">
+    <div class="container col-xl-10 col-xxl-8 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Bienvenido(a) al sistema de asistencias</h1>
+          <p class="col-lg-10 fs-4">Inicia sesión con tu clave de empleado y nombre</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput">
+              <label for="floatingInput">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword">
+              <label for="floatingPassword">Clave</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Iniciar sesión</button>
+            <hr class="my-4">
+            <small class="text-muted">Al dar click en Iniciar sesión aceptas los términos y condiciones.</small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main> <!-- Fin de Formulario -->
+
+  <!-- Inicio de Footer -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+      <span class="text-muted">Hecho por Betanzos Lara Yuritzi Lizeth &copy; <?=date('Y')?></span>
+    </div>
+  </footer> <!-- Fin de Footer -->
+
+  <script src="./assets/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./assets/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>
